@@ -12,11 +12,11 @@
     <title>Pedacito de Cielo</title>
 </head>
 <body>
-    <header class="header">
+    <header id="home" class="header">
         <nav class="nav">
             <div class="nav__decoration"></div>
             <div class="nav__container">
-                <img src="./assets/logo.png" alt="Logo Pedacito de Cielo" class="nav__logo">
+                <a href="#home"><img src="./assets/logo.png" alt="Logo Pedacito de Cielo" class="nav__logo"></a>
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Inicio</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">Nosotros</a></li>
@@ -27,14 +27,37 @@
                 <img src="./assets/menu.svg" alt="" class="nav__menu">
             </div>
         </nav>
-        <div class="hero">
-            
+        
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="./assets/bg1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assets/bg2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assets/bg3.jpg" alt="">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><img src="./assets/leftarrow.svg" alt=""></button>
+                <button id="next"><img src="./assets/rightarrow.svg" alt=""></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
     </header>
     <main class="main">
-        <div class="main__text">
+        <!-- <div class="main__text">
             <h1 class="main__title">• Los preferidos •</h2>
             <h3 class="main__subtitlle">¿Cuál vas a elegir hoy?</h3>
+        </div> -->
+        <div class="main__favoritos">
+            <img src="./assets/favorite.webp" alt="" class="favoritos__img">
         </div>
         <div class="preferidos__grid">
             <article class="preferidos__card">
